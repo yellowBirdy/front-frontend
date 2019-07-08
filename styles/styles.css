@@ -1,0 +1,75 @@
+:root {
+	--color-base: #3155A3;
+	--color-sec: #FAA06B;
+	--color-thr: #E8D933;
+	--color-bgr: #f3ecea;
+	--color-bgr-shade1: #e8d6d1;
+
+	--txt-color-base: #151311;
+	--txt-color-reverse: rgba(255,255,255, 0.71);
+}
+
+
+
+
+/* ELELMENTS */
+
+
+body {
+	background-color: var(--color-bgr);
+	font-family: Lato, sans-serif;
+}
+
+
+
+h2, h3, h4, h5 {
+	color: var(--color-base);
+}
+
+
+
+/*  CLASSES */
+.secondary {
+	color: var(--color-sec);
+}
+
+/* SPECIFIC ELEMENTS */
+
+/* header nav*/
+ul.nav{
+	list-style-type: none;
+}
+
+header .nav.item, header ul.nav li  {
+	color: var(--color-base);
+	cursor: pointer;
+}
+
+
+
+div.menu.dropdown ul{
+	background-color: var(--color-bgr);
+	border-color:var(--color-bgr-shade1);
+}
+
+
+/* footer */
+footer {
+	background-color: var(--color-sec);
+}
+
+footer nav, footer a {
+	color: var(--txt-color-reverse);
+}
+
+
+.footer.marks  img {
+	background-color: whitesmoke;
+}
+
+.footer.marks  img.github {
+	border-radius: 20px;
+}
+.footer.marks  img.linkedin {
+	border-radius: 3px;
+}

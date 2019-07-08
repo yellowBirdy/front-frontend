@@ -1,0 +1,28 @@
+<svg width="258" height="258" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="260" width="260" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="none" stroke="#000000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" id="svg_21"/>
+  <polyline transform="translate(9,21) " fill="none" stroke="#000000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" points="361.7760735353796,101.54439834416029 361.7760735353796,101.54439834416029 " id="svg_27" stroke-linecap="round"/>
+  <g id="svg_1">
+   <ellipse fill="#3155A3" stroke-width="1.5" fill-opacity="null" cx="127.999998" cy="127.999999" id="svg_33" rx="126" ry="126" stroke="#191919"/>
+   <g id="waves">
+    <g class="wave lil" id="lilwave">
+     <path fill="hsl(211,50%,32%)" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" d="m102.672478,251.328499l78.8,-35.1c17.80488,-7.38973 20,-21.70732 20,-21.70732c0,0 4.39024,11.04307 18.1,20.6a126,126 0 0 1 -116.9,36.20732" id="svg_13" stroke="#307bcc"/>
+    </g>
+    <g class="wave mid" id="midwave">
+     <path fill="hsl(211,70%,52%)" stroke="hsl(211,75%,67%)" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" d="m102.672478,251.328499l21.6,-53.2c7.99581,-10.06922 10,-14.55598 16.78572,-33.84169c6.78571,-19.28572 11.96911,-8.49421 13.05018,-7.05599c1.08108,1.43822 -2.58687,-0.42472 -2.94402,4.93242c-0.35714,5.35714 2.75098,16.76642 2.75098,16.76642c0,0 3.03571,10.08929 8.66071,17.5c2.8125,3.70536 12.93259,14.67062 18.00224,18.58259c5.06965,3.91197 3.9,5.4 27.4,11a126,126 0 0 1 -105.30581,25.31625" id="svg_12"/>
+    </g>
+    <g class="wave big" id="bigwave">
+     <path fill="hsl(211,100%,62%)" stroke="hsl(211,100%,72%)" stroke-width="1.5" fill-opacity="null" d="m3.472478,144.828499c23.9546,46.18648 22.29097,12.30679 55.32126,-22.50378c33.03029,-34.81057 54.99995,-32.91661 64.99993,-28.33329c9.99998,4.58332 12.38635,12.91664 11.72977,20.87118c-0.65658,7.95454 -10.93432,15.56816 -17.14644,9.12878l1.42121,-1.93428c10.43716,6.57787 10.07725,-9.00131 9.71736,-9.1167c0.17994,0.05769 -2.06944,-8.22235 -13.1814,-7.38569c-5.55598,0.41833 -21.49009,10.93608 -23.80414,27.15176c-2.31405,16.21569 1.31437,29.1223 11.65663,45.65578c2.58556,4.13337 8.7372,11.57403 16.02165,17.92146c7.28444,6.34743 14.98742,12.31594 19.24706,14.93359c8.51931,5.2353 28.6225,15.6386 57,22.43452a126,126 0 0 1 -192.98289,-88.82333" id="svg_7"/>
+    </g>
+   </g>
+   <ellipse fill="none" stroke-width="1.5" fill-opacity="null" cx="127.999998" cy="127.999999" rx="126" ry="126" stroke="#191919"/>
+  </g>
+ </g>
+</svg>
