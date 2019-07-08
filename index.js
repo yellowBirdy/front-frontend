@@ -18,15 +18,16 @@ var wireUpNav = function () {
 
 
 var wireUpTiles = function () {
-	var tileImgs = document.querySelectorAll('#images div.tile > img');
+
+	var tileImgs = document.querySelectorAll('.images div.tile > img');
 	tileImgs.forEach(function (pic) {
 		pic.addEventListener('click', function (event) {
-			var bigpic = document.querySelector("#images img.bigpic-pic");
+			var bigpic = document.querySelector(".images img.bigpic-pic");
 			bigpic.src = event.target.src;
 
 			//selected live during event handling,
 			var tile = event.target.parentElement;
-			var activeTile = document.querySelector("#images div.tile.active");
+			var activeTile = document.querySelector(".images div.tile.active");
 
 			activeTile.classList.remove("active");
 			tile.classList.add("active");
