@@ -1,4 +1,5 @@
 $color-base: #3155A3;
+$layout-width: 820;
 
 :root {
 	--color-base: #{$color-base};
@@ -9,14 +10,34 @@ $color-base: #3155A3;
 
 	--txt-color-base: #151311;
 	--txt-color-reverse: rgba(255,255,255, 0.71);
+
+
+	--layout-width: #{$layout-width};
+}
+
+
+// CONTAINER
+@media only screen and (min-width: 820px) {
+	.container--layout {
+		width: $layout-width;
+		width: var(--layout-width);	
+		margin: 0 auto;
+	}
+}
+
+// SECTION
+
+.section {
+	width: 100%;
 }
 
 
 
 
-/* ELELMENTS */
+/* ELEMENTS */
 
 
+ 
 body {
 	background-color: var(--color-bgr);
 	font-family: Lato, sans-serif;

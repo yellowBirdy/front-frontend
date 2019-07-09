@@ -5,9 +5,19 @@
   --color-bgr: #f3ecea;
   --color-bgr-shade1: #e8d6d1;
   --txt-color-base: #151311;
-  --txt-color-reverse: rgba(255,255,255, 0.71); }
+  --txt-color-reverse: rgba(255,255,255, 0.71);
+  --layout-width: 820; }
 
-/* ELELMENTS */
+@media only screen and (min-width: 820px) {
+  .container--layout {
+    width: 820;
+    width: var(--layout-width);
+    margin: 0 auto; } }
+
+.section {
+  width: 100%; }
+
+/* ELEMENTS */
 body {
   background-color: var(--color-bgr);
   font-family: Lato, sans-serif; }
