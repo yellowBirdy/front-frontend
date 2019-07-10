@@ -1,3 +1,4 @@
+/* GALLERY */
 :root {
   --section-padding-vertical: 1rem;
   --img-padding: 0.3rem; }
@@ -45,20 +46,60 @@
   .page-header__content {
     padding-top: 0px; } }
 
+/* MAIN */
+.main {
+  padding-bottom: 2rem; }
+
+/* GALLERY */
+.gallery {
+  padding: 1rem 0; }
+
+.gallery__tiles {
+  display: flex;
+  flex-wrap: wrap; }
+
+.gallery__tile {
+  --tile-width: 160px;
+  --tile-width: 160px;
+  flex: 0 0 var(--tile-width);
+  height: 106.656px;
+  padding: var(--img-padding);
+  border: none; }
+
+@media only screen and (max-width: 520px) {
+  .gallery__tile {
+    --tile-width: 20vw; } }
+
+.gallery__tile:hover {
+  border: 2px solid var(--color-base);
+  border-radius: 0; }
+
+.gallery__tile--active {
+  border: 1px solid #FAA06B;
+  border: 1px solid var(--color-sec);
+  border-radius: 2px; }
+
+.gallery__pic {
+  width: 100%; }
+
+.tile:not(.active) > img:hover {
+  border: 2px solid var(--color-base); }
+
+.bigpic {
+  width: 100%; }
+
+img.bigpic-pic {
+  width: 100%;
+  object-fit: fill;
+  padding: var(--img-padding); }
+
 /* ELEMENTS */
-nav, main, footer, aside, section, ul, div {
+nav, main, footer, aside, ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   padding: 0.5rem; }
-
-main {
-  padding-bottom: 2rem; }
-
-section, footer {
-  flex: 0 0 100%;
-  padding: var(--section-padding-vertical) 0; }
 
 h3 {
   text-align: center;
@@ -152,36 +193,6 @@ section.columns h4 {
 @media (min-width: 0px) and (max-width: 520px) {
   section.columns > article {
     flex: 0 0 94%; } }
-
-div.tile {
-  --tile-width: 160px;
-  --tile-width: 160px;
-  flex: 0 0 var(--tile-width);
-  height: 106.656px;
-  padding: var(--img-padding);
-  border: none; }
-
-div.tile.active {
-  border: 1px solid var(--color-sec);
-  border-radius: 2px; }
-
-@media only screen and (max-width: 520px) {
-  div.tile {
-    --tile-width: 20vw; } }
-
-.tile > img {
-  width: 100%; }
-
-.tile:not(.active) > img:hover {
-  border: 2px solid var(--color-base); }
-
-.bigpic {
-  width: 100%; }
-
-img.bigpic-pic {
-  width: 100%;
-  object-fit: fill;
-  padding: var(--img-padding); }
 
 /* footer */
 footer {

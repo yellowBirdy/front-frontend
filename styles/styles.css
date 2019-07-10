@@ -1,3 +1,9 @@
+/*$color-base: #3155A3;
+$color-sec : #FAA06B;
+$layout-width: 820;
+$rem-size: 17;
+*/
+/* GALLERY */
 :root {
   --color-base: #3155A3;
   --color-sec: #FAA06B;
@@ -38,7 +44,6 @@ h2, h3, h4, h5 {
   color: var(--color-sec); }
 
 /* SPECIFIC ELEMENTS */
-/* header nav*/
 ul.nav {
   list-style-type: none; }
 

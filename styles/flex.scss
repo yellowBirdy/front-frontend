@@ -1,20 +1,15 @@
-$tile-width : 160px;
+@import "variables";
 
 :root {
-
-	--section-padding-vertical: 1rem;
+	--section-padding-vertical: #{$section-padding-vertical};
 	--img-padding: 0.3rem;
-
 }
-
-
-
-
 
 // PAGE-HEADER
 .page-header {
 	display: flex;
 	flex-direction: column;
+
 
 	&__landing {
 		flex: 0 0 100%;
@@ -62,11 +57,71 @@ $tile-width : 160px;
 }
 
 
+/* MAIN */
+.main {
+	padding-bottom: 2rem;
+}
+
+
+/* GALLERY */
+
+.gallery {
+	padding: $section-padding-vertical 0;
+
+	&__tiles {
+		display: flex;
+		flex-wrap: wrap;
+
+	} 
+	&__tile {
+		--tile-width: 160px;
+		--tile-width: #{$tile-width};
+		flex: 0 0 var(--tile-width);
+		height: $tile-width*0.6666; 
+		padding: var(--img-padding);
+		border: none;
+	}
+	@media only screen and (max-width: 520px) {
+		&__tile {
+			--tile-width: 20vw;
+		}	
+	}
+	&__tile:hover {
+		border: 2px solid var(--color-base);
+		border-radius: 0;
+	}
+	&__tile--active {
+		border: 1px solid $color-sec;
+		border: 1px solid var(--color-sec);
+		border-radius: 2px;
+	}
+
+	&__pic {
+		width: 100%;
+	}
+
+
+}
+
+
+.tile:not(.active) > img:hover {
+	border: 2px solid var(--color-base);
+} 
+
+.bigpic {
+	width: 100%;
+}
+img.bigpic-pic {
+	width: 100%;
+	object-fit: fill;
+	padding: var(--img-padding);
+}
+
 
 /* ELEMENTS */
 
 
-nav, main, footer, aside, section, ul, div {
+nav, main, footer, aside, ul {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -74,14 +129,7 @@ nav, main, footer, aside, section, ul, div {
 	padding: 0.5rem;	
 }
 
-main {
-	padding-bottom: 2rem;
-}
 
-section, footer {
-	flex: 0 0 100%;
-	padding: var(--section-padding-vertical) 0;
-}
 
 h3 {
 	text-align: center;
@@ -206,43 +254,6 @@ section.columns h4 {
 	}
 } 
 
-div.tile {
-	--tile-width: 160px;
-	--tile-width: #{$tile-width};
-	flex: 0 0 var(--tile-width);
-	//height: var(--tile-width)*66.6%;
-	height: $tile-width*0.6666; 
-	padding: var(--img-padding);
-	border: none;
-}
-
-div.tile.active {
-	border: 1px solid var(--color-sec);
-	border-radius: 2px;
-}
-
-@media only screen and (max-width: 520px) {
-	div.tile {
-		--tile-width: 20vw;
-	}	
-}
-
-
-.tile > img {
-	width: 100%;
-}
-.tile:not(.active) > img:hover {
-	border: 2px solid var(--color-base);
-} 
-
-.bigpic {
-	width: 100%;
-}
-img.bigpic-pic {
-	width: 100%;
-	object-fit: fill;
-	padding: var(--img-padding);
-}
 
 /* footer */
 
