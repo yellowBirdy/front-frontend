@@ -6,16 +6,24 @@
   --color-bgr-shade1: #e8d6d1;
   --txt-color-base: #151311;
   --txt-color-reverse: rgba(255,255,255, 0.71);
-  --layout-width: 820; }
+  --layout-width: 820;
+  font-size: 17px; }
+
+@media only screen and (max-width: 500px) {
+  :root {
+    font-size: 17 -4px; } }
 
 @media only screen and (min-width: 820px) {
   .container--layout {
     width: 820;
     width: var(--layout-width);
-    margin: 0 auto; } }
+    margin: 0 auto;
+    flex: 0 0 820;
+    flex: 0 0 var(--layout-width); } }
 
-.section {
-  width: 100%; }
+.container--uncontained {
+  background-color: #FAA06B;
+  background-color: var(--color-sec); }
 
 /* ELEMENTS */
 body {

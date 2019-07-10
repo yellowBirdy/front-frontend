@@ -1,34 +1,72 @@
 $tile-width : 160px;
 
 :root {
-	font-size: 15px;
+
 	--section-padding-vertical: 1rem;
 	--img-padding: 0.3rem;
 
 }
 
-@media only screen and (max-width: 500px) {
-	:root {
-		font-size: 13px;
-	}
-}
 
-// SECTION
-.section {
-	width: 100%;
-	display: flex;
-}
+
 
 
 // PAGE-HEADER
 .page-header {
-	flex-direction: column;}
+	display: flex;
+	flex-direction: column;
+
+	&__landing {
+		flex: 0 0 100%;
+		align-content: space-between;
+		align-items: flex-end;
+		justify-content: space-around;
+		flex-direction: row-reverse;
+		background-image: url("../pics/training_arms_blonde_workout_1542x1024.jpg");
+		background-size: 100% 100%;
+		min-height: 66vw;}
+
+	&__heading {
+		color: var(--color-base);
+		font-size: 3rem;
+		text-align: center;
+		flex:1 1 100%;}
+
+	&__content {
+		height: 7.3rem;
+		font-size: 1.4rem;
+		padding-top: 2rem;}
+
+	@media only screen and (min-width: 820px) {
+		&__landing {
+			min-height: 540px;}
+		}
+
+	@media only screen and (max-width: 500px) {
+		&__heading {
+			color: var(--color-base);
+			font-size: 1.8rem;
+			text-align: center;
+			height: 7.3rem;
+			flex:1 1 100%;}
+
+		&__content {
+			font-size: 1rem;}
+		}
+
+	@media only screen and (max-width:330px) {
+		&__content {
+			padding-top: 0px;}
+	}
+
+}
+
 
 
 /* ELEMENTS */
 
 
-nav, section, main, footer, aside, ul, div {
+nav, main, footer, aside, section, ul, div {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -37,7 +75,7 @@ nav, section, main, footer, aside, ul, div {
 }
 
 main {
-	padding-bottom: 2rem ;
+	padding-bottom: 2rem;
 }
 
 section, footer {
@@ -52,12 +90,6 @@ h3 {
 }
 
 /* elements MEDIA */
-
-@media only screen and (max-width: 500px) {
-	body {
-		font-size: 13px;
-	}
-}
 
 
 /* CLASSES */
@@ -140,62 +172,6 @@ nav ul.nav li.active, nav .item.active {
 }
 
 
-
-/* header section.landing */
-
-.page-header__landing {
-	align-content: space-between;
-	align-items: flex-end;
-	justify-content: space-around;
-	flex-direction: row-reverse;
-	background-image: url("../pics/training_arms_blonde_workout_1542x1024.jpg");
-	background-size: 100% 100%;
-	min-height: 66vw;
-}
-
-.page-header__heading {
-	color: var(--color-base);
-	font-size: 3rem;
-	text-align: center;
-	flex:1 1 100%;
-}
-
-.content.landing {
-	/*position: absolute;
-	top: 71%;
-	left: 50%;*/
-	height: 7.3rem;
-	font-size: 1.4rem;
-	padding-top: 2rem;
-}
-
-/* section.landing @media */
-
-@media only screen and (min-width: 820px) {
-	.page-header__landing {
-		min-height: 540px;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	section.landing h1 {
-		color: var(--color-base);
-		font-size: 1.8rem;
-		text-align: center;
-		height: 7.3rem;
-		flex:1 1 100%;	
-	}
-
-	.content.landing {
-		font-size: 1rem;
-	}
-}
-@media only screen and (max-width:330px) {
-	.content.landing {
-		padding-top: 0px;
-	}
-}
-
 /* main section.columns */
 
 section.columns {
@@ -229,12 +205,6 @@ section.columns h4 {
 		flex: 0 0 94%;
 	}
 } 
-
-/* main section.images */
-
-/*{
-	justify-content:flex-start;
-}*/
 
 div.tile {
 	--tile-width: 160px;
@@ -275,10 +245,6 @@ img.bigpic-pic {
 }
 
 /* footer */
-
-div.container.uncontained {
-	background-color: var(--color-sec);
-}
 
 footer {
 	flex-wrap: nowrap;

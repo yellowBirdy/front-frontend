@@ -1,9 +1,13 @@
 $color-base: #3155A3;
+$color-sec : #FAA06B;
 $layout-width: 820;
+$rem-size: 17;
 
+
+// :ROOT
 :root {
 	--color-base: #{$color-base};
-	--color-sec: #FAA06B;
+	--color-sec: #{$color-sec};
 	--color-thr: #E8D933;
 	--color-bgr: #f3ecea;
 	--color-bgr-shade1: #e8d6d1;
@@ -11,25 +15,40 @@ $layout-width: 820;
 	--txt-color-base: #151311;
 	--txt-color-reverse: rgba(255,255,255, 0.71);
 
-
 	--layout-width: #{$layout-width};
+
+	font-size: #{$rem-size}px;
+
 }
 
 
+@media only screen and (max-width: 500px) {
+	:root {
+		font-size: #{$rem-size -4}px;
+	}
+}
+
+
+
+
 // CONTAINER
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: #{$layout-width}px) {
 	.container--layout {
 		width: $layout-width;
 		width: var(--layout-width);	
 		margin: 0 auto;
+		flex: 0 0 $layout-width;
+		flex: 0 0 var(--layout-width);
 	}
+}
+
+.container--uncontained {
+	background-color: $color-sec;
+	background-color: var(--color-sec);
 }
 
 // SECTION
 
-.section {
-	width: 100%;
-}
 
 
 /* ELEMENTS */

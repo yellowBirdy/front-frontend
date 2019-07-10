@@ -11,12 +11,12 @@
 <body>
 	<div class="container container--layout">
 		<header class="section page-header">
-			<nav>
+			<nav class="page-header__nav">
 				<ul class="nav">
 					<li class="nav item logo"><img src="pics/logo-wave-light-bg.svg" alt="logo" class="nav logo" /></li>
 					<li class="nav item active" name="flex.css">FLEX</li>
 					<li class="nav item" name="grid.css">GRID</li>
-					<li class"nav item" name="float.css">FLOAT</li>
+					<li class="nav item" name="float.css">FLOAT</li>
 					<li class="nav item">BATS</li>
 				</ul>
 				<div class="flexspacer"></div>
@@ -37,13 +37,13 @@
 				<div style="flex:0 0 30%; height:3rem;"></div>
 				<div style="flex:0 0 65%; height:3rem;"></div>
 
-				<div class="content landing"><p class="secondary">LOOK!<br />Everything<br />FLEXING</p></div>
+				<div class="page-header__content"><p class="secondary">LOOK!<br />Everything<br />FLEXING</p></div>
 			</section> 
 		</header>
 		<main>
-			<section class="section">
+			<section>
 				<h3>Block section heading</h3>
-				<article class="article block">
+				<article>
 					Nothing to it. Just a BLOCK OF TEXT, don't boo it.
 					Nothing to it. Just a block of thext, don't boo it.
 					Nothing to it. Just a block of thext, don't boo it.
@@ -54,55 +54,54 @@
 				</article>
 			</section>
 
-			<section class="section images">
+			<section class="gallery">
 				<h3>Images section heading</h3>
-				<div class="bigpic">
+				<div class="gallery__bigpic bigpic">
 					<img class="bigpic-pic" src="pics/1.jpg" alt="Chosen Big Pic" />
 				</div>
-				<div class="tiles">
-					<div class="tile active"><img src="pics/1.jpg" alt="flex pic No.1" /></div>
-					<div class="tile"><img src="pics/2.jpg" alt="flex pic No.2" /></div>
-					<div class="tile"><img src="pics/3.jpg" alt="flex pic No.3" /></div>
-					<div class="tile"><img src="pics/4.jpg" alt="flex pic No.4" /></div>
-					<div class="tile"><img src="pics/5.jpg" alt="flex pic No.5" /></div>
-					<div class="tile"><img src="pics/6.jpg" alt="flex pic No.6" /></div>
-					<div class="tile"><img src="pics/7.jpg" alt="flex pic No.7" /></div>
-					<div class="tile"></div>
+				<div class="gallery__tiles tiles">
+					<div class="gallery__tile gallery__tile--active tile active"><img src="pics/1.jpg" alt="flex pic No.1" /></div>
+					<div class="gallery__tile tile"><img src="pics/2.jpg" alt="flex pic No.2" /></div>
+					<div class="gallery__tile tile"><img src="pics/3.jpg" alt="flex pic No.3" /></div>
+					<div class="gallery__tile tile"><img src="pics/4.jpg" alt="flex pic No.4" /></div>
+					<div class="gallery__tile tile"><img src="pics/5.jpg" alt="flex pic No.5" /></div>
+					<div class="gallery__tile tile"><img src="pics/6.jpg" alt="flex pic No.6" /></div>
+					<div class="gallery__tile tile"><img src="pics/7.jpg" alt="flex pic No.7" /></div>
+					<div class="gallery__tile tile"></div>
 				</div>
 			</section>
-			<section class="section columns">
-				<article class="article"><h4 class="article heading">Title1</h4><p class="article content">Nothing to it. Just a BLOCK OF TEXT, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it.</p>
+			<section class="columns">
+				<article class="columns__column"><h4 class="columns__column-heading">Title1</h4><p class="columns__column-content">Nothing to it. Just a BLOCK OF TEXT, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it.</p>
 				</article>
-				<article class="article"><h4 class="article heading">Title2</h4><p class="article content">Nothing to it. Just a BLOCK OF TEXT, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it.</p></article>
-				<article class="article"><h4 class="article heading">Title3</h4><p class="article content">Nothing to it. Just a BLOCK OF TEXT, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it.</p></article>
+				<article class="columns__column"><h4 class="columns__column-heading">Title2</h4><p class="columns__column-content">Nothing to it. Just a BLOCK OF TEXT, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it.</p></article>
+				<article class="columns__column"><h4 class="columns__column-heading">Title3</h4><p class="columns__column-content">Nothing to it. Just a BLOCK OF TEXT, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it. Nothing to it. Just a block of thext, don't boo it.</p></article>
 			</section>
-
 
 		</main>
 	</div>		
 
-	<div class="container uncontained">
-		<footer class="footer layout">
-			<nav class="footer-nav" >
+	<div class="container container--uncontained">
+		<footer class="footer container container--layout">
+			<nav class="footer__nav">
 				<h4>Nav</h4>
-				<ul class="footer nav">
-					<li>HOME</li>
-					<li>FLEX</li>
-					<li>GRID</li>
-					<li>FLOAT</li>
-					<li>BATS</li>
+				<ul class="footer nav footer__nav-menu">
+					<li class="footer__nav-item">HOME</li>
+					<li class="footer__nav-item">FLEX</li>
+					<li class="footer__nav-item">GRID</li>
+					<li class="footer__nav-item">FLOAT</li>
+					<li class="footer__nav-item">BATS</li>
 				</ul>
 			</nav>
 			<div><!--MIDDLE FOOTERS--></div>
-			<div class="contact" >
+			<div class="footer__contact" >
 				<h4>Connect with me</h4>
-				<div class="footer marks">
-					<a href="https://www.github.com/yellowBirdy"><img class="github" src="GitHub-Mark-32px.png" alt="Github mark"/></a>
-					<a href="https://www.linkedin.com/in/mieszko-piotr-manijak-96925317"><img class="linkedin" src="In-Blue-40.png" alt="LinkedIn mark" width="32px"/></a>
-					<a class="twitter" href="https://twitter.com/przebigniew"><img src="Twitter_Logo_WhiteOnBlue.svg" alt="LinkedIn mark" width="32px"/></a>
+				<div class="footer marks social-marks">
+					<a href="https://www.github.com/yellowBirdy"><img class="social-marks__mark social-marks__mark--github github " src="GitHub-Mark-32px.png" alt="Github mark"/></a>
+					<a href="https://www.linkedin.com/in/mieszko-piotr-manijak-96925317"><img class="social-marks__mark social-marks__mark--linkedin linkedin" src="In-Blue-40.png" alt="LinkedIn mark" width="32px"/></a>
+					<a class="social-marks__mark social-marks__mark--twitte twitter" href="https://twitter.com/przebigniew"><img src="Twitter_Logo_WhiteOnBlue.svg" alt="LinkedIn mark" width="32px"/></a>
 				</div>
 
-				<a href="mailto:hi@mieszkomanijak.com?Subject=Hello">hi@mieszkomanijak.com</a>
+				<a class="footer_contact-mailto" href="mailto:hi@mieszkomanijak.com?Subject=Hello">hi@mieszkomanijak.com</a>
 			</div>
 		</footer>
 	</div>
