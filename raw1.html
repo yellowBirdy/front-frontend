@@ -11,28 +11,30 @@
 </head>
 <body>
 	<div class="container container--layout">
-		<header class="section page-header">
+		<header class="page-header">
+			<div class="page-header__nav">
 			<nav class="page-header__nav">
-				<ul class="nav page-header__nav-menu">
-					<li class="page-header__nav-item nav item logo"><img src="pics/logo-wave-light-bg.svg" alt="logo" class="nav logo" /></li>
-					<li class="page-header__nav-item nav item active" name="flex.css">FLEX</li>
-					<li class="page-header__nav-item nav item" name="grid.css">GRID</li>
-					<li class="page-header__nav-item nav item" name="float.css">FLOAT</li>
-					<li class="page-header__nav-item nav item">BATS</li>
+				<ul class="nav menu">
+					<li class="menu__item nav item logo"><img src="pics/logo-wave-light-bg.svg" alt="logo" class="nav logo" /></li>
+					<li class="menu__item nav item active" name="flex.css">FLEX</li>
+					<li class="menu__item nav item" name="grid.css">GRID</li>
+					<li class="menu__item nav item" name="float.css">FLOAT</li>
+					<li class="menu__item nav item">BATS</li>
 				</ul>
 				<div class="page-header__nav-flexspacer flexspacer"></div>
 				<img src="" alt="avatar" class="page-header__nav-avatar nav item avatar" />
 				
 				<div class="page-header__nav-dropdown menu dropdown">
 					<img src="pics/hamburger.svg" alt="burgermenu" class="menu icon burgermenu" />
-					<ul class="page-header__nav-menu page-header__nav-menu--dropdown nav dropdown">
-						<li class="page-header__nav-item nav item active" name="flex.css">FLEX</li>
-						<li class="page-header__nav-item nav item" name="grid.css">GRID</li>
-						<li class="page-header__nav-item nav item" name="float.css">FLOAT</li>
-						<li class="page-header__nav-item nav item">BATS</li>
+					<ul class="menu menu--column nav dropdown">
+						<li class="menu__item nav item active" name="flex.css">FLEX</li>
+						<li class="menu__item nav item" name="grid.css">GRID</li>
+						<li class="menu__item nav item" name="float.css">FLOAT</li>
+						<li class="menu__item nav item">BATS</li>
 					</ul>
 				</div>
 			</nav>
+			</div>
 			<section class="page-header__landing">
 				<h1 class="page-header__heading" style="flex:0 0 60%;"><img src="pics/logo-wave.svg" alt="logo-dark" style="width:15%;"/> Everything<br /> laid out by FLEX</h1>
 				<div style="flex:0 0 30%; height:3rem;"></div>
@@ -42,9 +44,9 @@
 			</section> 
 		</header>
 		<main class="main">
-			<section>
-				<h3>Block section heading</h3>
-				<article>
+			<section class="simpletone">
+				<h3 class="simpletone__heading">Block section heading</h3>
+				<article class="simpleteone__article">
 					Nothing to it. Just a BLOCK OF TEXT, don't boo it.
 					Nothing to it. Just a block of thext, don't boo it.
 					Nothing to it. Just a block of thext, don't boo it.
@@ -85,12 +87,12 @@
 		<footer class="footer container container--layout">
 			<nav class="footer__nav">
 				<h4>Nav</h4>
-				<ul class="footer nav footer__nav-menu">
-					<li class="footer__nav-item">HOME</li>
-					<li class="footer__nav-item">FLEX</li>
-					<li class="footer__nav-item">GRID</li>
-					<li class="footer__nav-item">FLOAT</li>
-					<li class="footer__nav-item">BATS</li>
+				<ul class="footer nav menu menu--column menu--modest">
+					<li class="menu__item">HOME</li>
+					<li class="menu__item">FLEX</li>
+					<li class="menu__item">GRID</li>
+					<li class="menu__item">FLOAT</li>
+					<li class="menu__item">BATS</li>
 				</ul>
 			</nav>
 			<div><!--MIDDLE FOOTERS--></div>
