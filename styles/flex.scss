@@ -153,12 +153,24 @@ h3 {
 
 /* SPECIFIC ELEMENTS */
 
+
+.menu {
+	display: flex;
+
+	&__item {
+		min-width: 5em;
+		text-align: center;
+		padding: 0.7em 0;
+	}
+}
+
+
 /* header nav */
-header .nav.item, header ul.nav li  {
+/*header .nav.item, header ul.nav li  {
 	min-width: 5em;
 	text-align: center;
 	padding: 0.7em 0;
-}
+}*/
 header ul.nav li {
 	font-weight: bold;
 }
