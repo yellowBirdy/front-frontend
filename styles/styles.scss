@@ -75,16 +75,7 @@ h2, h3, h4, h5 {
 }
 
 /* SPECIFIC ELEMENTS */
-
-ul.nav{
-	list-style-type: none;
-}
-
-header .nav.item, header ul.nav li  {
-	color: var(--color-base);
-	cursor: pointer;
-}
-
+	
 
 
 div.menu.dropdown ul{
@@ -113,4 +104,13 @@ footer nav, footer a {
 }
 .footer.marks  img.linkedin {
 	border-radius: 3px;
+}
+
+
+/* LAYOUT  */
+
+@media only screen and (max-width: 480px) {
+	.page-header__nav--bigscreen {
+			display: none;
+	}
 }

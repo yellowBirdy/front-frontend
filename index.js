@@ -1,5 +1,5 @@
 var wireUpNav = function () {
-	var navItems = document.querySelectorAll("header ul.nav li");
+	var navItems = document.querySelectorAll(".menu__item");
 	var sheetLink = document.querySelector("link#layout");
 
 	navItems.forEach(function (option) {
@@ -8,9 +8,9 @@ var wireUpNav = function () {
 			var sheetName = event.target.attributes["name"].value;
 			sheetLink.href = sheetLink.href.replace(/\w+\.css/, sheetName)
 			// "move" the active class
-			var oldActive = document.querySelector("ul.nav li.active");
-			oldActive.classList.remove("active");
-			event.target.classList.add("active");
+			var oldActive = document.querySelector(".menu__item--active");
+			oldActive.classList.remove("menu__item--active");
+			event.target.classList.add("menu__item--active");
 
 		})
 	})

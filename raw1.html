@@ -12,29 +12,28 @@
 <body>
 	<div class="container container--layout">
 		<header class="page-header">
-			<div class="page-header__nav">
-			<nav class="page-header__nav">
-				<ul class="nav menu">
-					<li class="menu__item nav item logo"><img src="pics/logo-wave-light-bg.svg" alt="logo" class="nav logo" /></li>
-					<li class="menu__item nav item active" name="flex.css">FLEX</li>
-					<li class="menu__item nav item" name="grid.css">GRID</li>
-					<li class="menu__item nav item" name="float.css">FLOAT</li>
-					<li class="menu__item nav item">BATS</li>
+			<nav class="page-header__nav--bigscreen">
+				<ul class="menu">
+					<li class="menu__item logo"><img src="pics/logo-wave-light-bg.svg" alt="logo" class="nav logo" /></li>
+					<li class="menu__item menu__item--active" name="flex.css">FLEX</li>
+					<li class="menu__item" name="grid.css">GRID</li>
+					<li class="menu__item" name="float.css">FLOAT</li>
+					<li class="menu__item">BATS</li>
 				</ul>
 				<div class="page-header__nav-flexspacer flexspacer"></div>
 				<img src="" alt="avatar" class="page-header__nav-avatar nav item avatar" />
-				
-				<div class="page-header__nav-dropdown menu dropdown">
-					<img src="pics/hamburger.svg" alt="burgermenu" class="menu icon burgermenu" />
-					<ul class="menu menu--column nav dropdown">
-						<li class="menu__item nav item active" name="flex.css">FLEX</li>
-						<li class="menu__item nav item" name="grid.css">GRID</li>
-						<li class="menu__item nav item" name="float.css">FLOAT</li>
-						<li class="menu__item nav item">BATS</li>
-					</ul>
-				</div>
 			</nav>
-			</div>
+				
+			<nav class="page-header__nav dropdown" >
+				<img src="pics/hamburger.svg" alt="burgermenu" class="dropdown__show" />
+				<ul class="dropdown__body menu menu--column">
+					<li class="menu__item menu__item--active" name="flex.css">FLEX</li>
+					<li class="menu__item" name="grid.css">GRID</li>
+					<li class="menu__item" name="float.css">FLOAT</li>
+					<li class="menu__item">BATS</li>
+				</ul>
+			</nav>
+			
 			<section class="page-header__landing">
 				<h1 class="page-header__heading" style="flex:0 0 60%;"><img src="pics/logo-wave.svg" alt="logo-dark" style="width:15%;"/> Everything<br /> laid out by FLEX</h1>
 				<div style="flex:0 0 30%; height:3rem;"></div>
