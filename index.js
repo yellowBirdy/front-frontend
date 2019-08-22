@@ -7,7 +7,8 @@ var wireUpNav = function () {
 			// "navigate" by repleacing the sheet
 			var sheetName = event.target.attributes["name"].value;
 			sheetLink.href = sheetLink.href.replace(/\w+\.css/, sheetName)
-			// "move" the active class
+			// "move" the active class 
+			//TODO: move from and to in all menus
 			var oldActive = document.querySelector(".menu__item--active");
 			oldActive.classList.remove("menu__item--active");
 			event.target.classList.add("menu__item--active");
