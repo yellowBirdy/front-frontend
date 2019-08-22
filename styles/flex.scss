@@ -147,16 +147,13 @@ h3 {
 }
 
 
-/*section, header nav {
-	border-bottom: 1px solid var(--color-bgr);
-}*/
-
 /* SPECIFIC ELEMENTS */
 
-$block-name: menu;
 .menu {
+	$self: &;
 	display: flex;
 	list-style: none;
+	background-color: $color-bgr;
 
 	&__item {
 		color: var(--color-base);
@@ -174,6 +171,17 @@ $block-name: menu;
 
 	&--column {
 		flex-direction: column;
+	}
+
+	&--modest {
+		background-color: inherit;
+
+		#{ $self }__item {
+			font-weight: normal;
+			padding: 0.2em 0;
+			border-bottom:none;
+			font-size: 0.5em;
+		} 
 	}
 
 }

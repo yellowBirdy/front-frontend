@@ -111,13 +111,11 @@ h3 {
 .flexspacer {
   flex: 100; }
 
-/*section, header nav {
-	border-bottom: 1px solid var(--color-bgr);
-}*/
 /* SPECIFIC ELEMENTS */
 .menu {
   display: flex;
-  list-style: none; }
+  list-style: none;
+  background-color: #f3ecea; }
 
 .menu__item {
   color: var(--color-base);
@@ -133,6 +131,15 @@ h3 {
 
 .menu--column {
   flex-direction: column; }
+
+.menu--modest {
+  background-color: inherit; }
+
+.menu--modest .menu__item {
+  font-weight: normal;
+  padding: 0.2em 0;
+  border-bottom: none;
+  font-size: 0.5em; }
 
 /* header nav */
 nav img.logo {
